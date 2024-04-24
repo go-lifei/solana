@@ -686,7 +686,7 @@ mod tests {
             test_tx::{new_test_vote_tx, test_multisig_tx, test_tx},
         },
         bincode::{deserialize, serialize},
-        curve25519_dalek::{edwards::CompressedEdwardsY, scalar::Scalar},
+        curve25519_dalek3::{edwards::CompressedEdwardsY, scalar::Scalar},
         rand::{thread_rng, Rng},
         solana_sdk::{
             instruction::CompiledInstruction,

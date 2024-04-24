@@ -18,7 +18,7 @@
 
 use {
     crate::RISTRETTO_POINT_LEN,
-    curve25519_dalek::{
+    curve25519_dalek3::{
         constants::RISTRETTO_BASEPOINT_POINT as G,
         ristretto::RistrettoPoint,
         scalar::Scalar,

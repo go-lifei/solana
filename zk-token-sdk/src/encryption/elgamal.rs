@@ -25,7 +25,7 @@ use {
     },
     base64::{prelude::BASE64_STANDARD, Engine},
     core::ops::{Add, Mul, Sub},
-    curve25519_dalek::{
+    curve25519_dalek3::{
         ristretto::{CompressedRistretto, RistrettoPoint},
         scalar::Scalar,
         traits::Identity,

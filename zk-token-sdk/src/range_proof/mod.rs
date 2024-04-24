@@ -13,7 +13,7 @@
 #[cfg(not(target_os = "solana"))]
 use {
     crate::encryption::pedersen::{Pedersen, PedersenCommitment, PedersenOpening},
-    curve25519_dalek::traits::MultiscalarMul,
+    curve25519_dalek3::traits::MultiscalarMul,
     rand::rngs::OsRng,
     subtle::{Choice, ConditionallySelectable},
 };
@@ -28,7 +28,7 @@ use {
         transcript::TranscriptProtocol,
     },
     core::iter,
-    curve25519_dalek::{
+    curve25519_dalek3::{
         ristretto::{CompressedRistretto, RistrettoPoint},
         scalar::Scalar,
         traits::{IsIdentity, VartimeMultiscalarMul},

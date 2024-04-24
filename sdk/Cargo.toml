@@ -47,7 +47,7 @@ bs58 = { workspace = true }
 bytemuck = { workspace = true, features = ["derive"] }
 byteorder = { workspace = true, optional = true }
 chrono = { workspace = true, features = ["alloc"], optional = true }
-curve25519-dalek = { workspace = true, optional = true }
+curve25519-dalek3 = { package = "curve25519-dalek",workspace = true,optional = true }
 derivation-path = { workspace = true }
 digest = { workspace = true, optional = true }
 ed25519-dalek = { workspace = true, optional = true }
@@ -90,7 +90,7 @@ js-sys = { workspace = true }
 
 [dev-dependencies]
 anyhow = { workspace = true }
-curve25519-dalek = { workspace = true }
+curve25519-dalek3 = { package = "curve25519-dalek",workspace = true }
 hex = { workspace = true }
 solana-sdk = { path = ".", features = ["dev-context-only-utils"] }
 static_assertions = { workspace = true }

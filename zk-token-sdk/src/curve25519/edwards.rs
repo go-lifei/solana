@@ -14,7 +14,7 @@ mod target_arch {
             errors::Curve25519Error,
             scalar::PodScalar,
         },
-        curve25519_dalek::{
+        curve25519_dalek3::{
             edwards::{CompressedEdwardsY, EdwardsPoint},
             scalar::Scalar,
             traits::VartimeMultiscalarMul,
@@ -246,7 +246,7 @@ mod tests {
     use {
         super::*,
         crate::curve25519::scalar::PodScalar,
-        curve25519_dalek::{
+        curve25519_dalek3::{
             constants::ED25519_BASEPOINT_POINT as G, edwards::EdwardsPoint, traits::Identity,
         },
     };

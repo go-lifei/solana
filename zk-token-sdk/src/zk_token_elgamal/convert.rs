@@ -50,7 +50,7 @@ mod target_arch {
     use {
         super::pod,
         crate::{curve25519::scalar::PodScalar, encryption::elgamal::ElGamalError},
-        curve25519_dalek::{ristretto::CompressedRistretto, scalar::Scalar},
+        curve25519_dalek3::{ristretto::CompressedRistretto, scalar::Scalar},
         std::convert::TryFrom,
     };
 

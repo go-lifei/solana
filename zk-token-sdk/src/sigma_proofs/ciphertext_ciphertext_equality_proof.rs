@@ -13,7 +13,7 @@ use {
         sigma_proofs::{canonical_scalar_from_optional_slice, ristretto_point_from_optional_slice},
         UNIT_LEN,
     },
-    curve25519_dalek::traits::MultiscalarMul,
+    curve25519_dalek3::traits::MultiscalarMul,
     rand::rngs::OsRng,
     zeroize::Zeroize,
 };
@@ -22,7 +22,7 @@ use {
         sigma_proofs::errors::{EqualityProofVerificationError, SigmaProofVerificationError},
         transcript::TranscriptProtocol,
     },
-    curve25519_dalek::{
+    curve25519_dalek3::{
         ristretto::{CompressedRistretto, RistrettoPoint},
         scalar::Scalar,
         traits::{IsIdentity, VartimeMultiscalarMul},

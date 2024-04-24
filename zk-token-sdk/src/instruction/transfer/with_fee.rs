@@ -24,7 +24,7 @@ use {
         transcript::TranscriptProtocol,
     },
     bytemuck::bytes_of,
-    curve25519_dalek::scalar::Scalar,
+    curve25519_dalek3::scalar::Scalar,
     merlin::Transcript,
     std::convert::TryInto,
     subtle::{ConditionallySelectable, ConstantTimeGreater},

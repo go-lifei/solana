@@ -11,7 +11,7 @@ use {
         },
         instruction::errors::InstructionError,
     },
-    curve25519_dalek::scalar::Scalar,
+    curve25519_dalek3::scalar::Scalar,
 };
 #[cfg(not(target_os = "solana"))]
 pub use {

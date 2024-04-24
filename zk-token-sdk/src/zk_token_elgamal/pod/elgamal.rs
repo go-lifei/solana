@@ -3,7 +3,7 @@
 #[cfg(not(target_os = "solana"))]
 use {
     crate::encryption::elgamal::{self as decoded, ElGamalError},
-    curve25519_dalek::ristretto::CompressedRistretto,
+    curve25519_dalek3::ristretto::CompressedRistretto,
 };
 use {
     crate::{

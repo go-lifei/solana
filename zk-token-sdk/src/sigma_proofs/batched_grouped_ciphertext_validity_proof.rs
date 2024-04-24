@@ -21,7 +21,7 @@ use {
         },
         transcript::TranscriptProtocol,
     },
-    curve25519_dalek::scalar::Scalar,
+    curve25519_dalek3::scalar::Scalar,
     merlin::Transcript,
 };
 

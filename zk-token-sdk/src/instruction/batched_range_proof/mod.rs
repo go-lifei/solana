@@ -31,7 +31,7 @@ use {
         errors::{ProofGenerationError, ProofVerificationError},
     },
     bytemuck::bytes_of,
-    curve25519_dalek::traits::IsIdentity,
+    curve25519_dalek3::traits::IsIdentity,
     merlin::Transcript,
     std::convert::TryInto,
 };

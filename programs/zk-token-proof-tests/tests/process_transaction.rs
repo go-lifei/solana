@@ -1,6 +1,6 @@
 use {
     bytemuck::{bytes_of, Pod},
-    curve25519_dalek::scalar::Scalar,
+    curve25519_dalek3::scalar::Scalar,
     solana_program_test::*,
     solana_sdk::{
         account::Account,

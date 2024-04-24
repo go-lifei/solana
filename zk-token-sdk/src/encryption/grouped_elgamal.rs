@@ -20,7 +20,7 @@ use {
         },
         RISTRETTO_POINT_LEN,
     },
-    curve25519_dalek::scalar::Scalar,
+    curve25519_dalek3::scalar::Scalar,
     thiserror::Error,
 };
 

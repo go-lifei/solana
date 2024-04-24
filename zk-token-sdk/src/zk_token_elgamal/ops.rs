@@ -138,7 +138,7 @@ mod tests {
             zk_token_elgamal::{ops, pod},
         },
         bytemuck::Zeroable,
-        curve25519_dalek::scalar::Scalar,
+        curve25519_dalek3::scalar::Scalar,
         std::convert::TryInto,
     };
 

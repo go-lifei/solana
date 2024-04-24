@@ -7,7 +7,7 @@ use {
         transcript::TranscriptProtocol,
     },
     core::iter,
-    curve25519_dalek::{
+    curve25519_dalek3::{
         ristretto::{CompressedRistretto, RistrettoPoint},
         scalar::Scalar,
         traits::{MultiscalarMul, VartimeMultiscalarMul},

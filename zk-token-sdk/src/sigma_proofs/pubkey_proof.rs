@@ -21,7 +21,7 @@ use {
         sigma_proofs::errors::{PubkeyValidityProofVerificationError, SigmaProofVerificationError},
         transcript::TranscriptProtocol,
     },
-    curve25519_dalek::{
+    curve25519_dalek3::{
         ristretto::{CompressedRistretto, RistrettoPoint},
         scalar::Scalar,
         traits::{IsIdentity, VartimeMultiscalarMul},

@@ -17,7 +17,7 @@ pub mod zero_balance_proof;
 #[cfg(not(target_os = "solana"))]
 use {
     crate::{sigma_proofs::errors::SigmaProofVerificationError, RISTRETTO_POINT_LEN, SCALAR_LEN},
-    curve25519_dalek::{ristretto::CompressedRistretto, scalar::Scalar},
+    curve25519_dalek3::{ristretto::CompressedRistretto, scalar::Scalar},
 };
 
 /// Deserializes an optional slice of bytes to a compressed Ristretto point.

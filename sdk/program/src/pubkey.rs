@@ -167,7 +167,7 @@ impl TryFrom<&str> for Pubkey {
 pub fn bytes_are_curve_point<T: AsRef<[u8]>>(_bytes: T) -> bool {
     #[cfg(not(target_os = "solana"))]
     {
-        curve25519_dalek::edwards::CompressedEdwardsY::from_slice(_bytes.as_ref())
+        curve25519_dalek3::edwards::CompressedEdwardsY::from_slice(_bytes.as_ref())
             .decompress()
             .is_some()
     }
@@ -945,7 +945,7 @@ mod tests {
             if let Ok(program_address) =
                 Pubkey::create_program_address(&[&bytes1, &bytes2], &program_id)
             {
-                let is_on_curve = curve25519_dalek::edwards::CompressedEdwardsY::from_slice(
+                let is_on_curve = curve25519_dalek3::edwards::CompressedEdwardsY::from_slice(
                     &program_address.to_bytes(),
                 )
                 .decompress()

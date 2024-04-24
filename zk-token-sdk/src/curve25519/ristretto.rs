@@ -14,7 +14,7 @@ mod target_arch {
             errors::Curve25519Error,
             scalar::PodScalar,
         },
-        curve25519_dalek::{
+        curve25519_dalek3::{
             ristretto::{CompressedRistretto, RistrettoPoint},
             scalar::Scalar,
             traits::VartimeMultiscalarMul,
@@ -248,7 +248,7 @@ mod tests {
     use {
         super::*,
         crate::curve25519::scalar::PodScalar,
-        curve25519_dalek::{
+        curve25519_dalek3::{
             constants::RISTRETTO_BASEPOINT_POINT as G, ristretto::RistrettoPoint, traits::Identity,
         },
     };

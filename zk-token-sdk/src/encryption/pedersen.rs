@@ -5,7 +5,7 @@ use rand::rngs::OsRng;
 use {
     crate::{RISTRETTO_POINT_LEN, SCALAR_LEN},
     core::ops::{Add, Mul, Sub},
-    curve25519_dalek::{
+    curve25519_dalek3::{
         constants::{RISTRETTO_BASEPOINT_COMPRESSED, RISTRETTO_BASEPOINT_POINT},
         ristretto::{CompressedRistretto, RistrettoPoint},
         scalar::Scalar,
